@@ -28,7 +28,7 @@ tickers = [('VOO', 'S&P 500'),
                ('FXDE.ME', 'FinEx ETF Немецкие компании'),
                ('FXGD.ME', 'FinEx ETF Золото')]
 
-BOT_ID = '2099267575:AAG11KwhrjFCXxzJjQhiSKWXzt1yzwfPzAM'
+BOT_ID = ''
 
 my_platform = platform.system()
 if my_platform == 'Windows':
