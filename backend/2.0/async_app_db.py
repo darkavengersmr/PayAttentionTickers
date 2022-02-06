@@ -41,6 +41,8 @@ async def write_to_log(user_id, message):
         async with session.begin():
             log = Logs(date=datetime.now(), user_id=user_id, message=message)
             session.add(log)
+            result = True
+    return result
 
 
 async def is_user(user_id):
@@ -84,7 +86,9 @@ async def create_user(user_id):
                 async with session.begin():
                     new_ticket = Tickers(user_id=user_id, ticker_id=ticker[0], ticker_desc=ticker[0], deviat_month=deviat_month, deviat_week=deviat_week)
                     session.add(new_ticket)
+        result = True
 
+    return result
 
 async def remove_user(user_id):
     result = False
@@ -103,7 +107,7 @@ async def remove_user(user_id):
             )
             await session.execute(statement)
             await session.commit()
-            result = True
+        result = True
     return result
 
 async def load_tickers(user_id):

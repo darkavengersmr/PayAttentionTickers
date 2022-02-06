@@ -7,7 +7,7 @@
 import platform
 import os
 
-db_connection = 'postgresql+asyncpg://pi:raspberry@192.168.32.64:5433/PayAttentionTickers'
+db_connection = 'postgresql+asyncpg://pi:raspberry@192.168.32.64:5432/PayAttentionTickers'
 
 redis_connection = {'host': '192.168.32.64', 'port': 6379, 'db': 0}
 

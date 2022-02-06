@@ -1,0 +1,12 @@
+aiohttp
+aiohttp_basicauth
+sqlalchemy
+asyncpg
+aioredis
+aiogram
+aioschedule
+matplotlib
+pandas
+yahoo_fin
+werkzeug
+openpyxl
